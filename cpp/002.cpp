@@ -2,8 +2,10 @@
 using namespace std;
 
 int main() {
-	int a = 1, b = 1, sum = 0;
-	while(a < 4000000) {
+	int a = 1, b = 1;
+	
+	int sum = 0;
+	while (a < 4000000) {
 		if(a % 2 == 0) {
 			sum += a;
 		}
