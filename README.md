@@ -1,2 +1,2 @@
-# project_euler_solutions
+# project_euler
 Solutions to the Project Euler problem set
