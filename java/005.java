@@ -1,6 +1,6 @@
-public class P005 {
+class Problem005 {
 	private static long gcd(long a, long b) {
-		if(b == 0) return a;
+		if (b == 0) return a;
 		return gcd(b, a % b);
 	}
 
@@ -10,7 +10,7 @@ public class P005 {
 
 	public static void main(String[] args) {
 		long num = 1;
-		for(int i = 1; i < 20; i++) {
+		for (int i = 1; i < 20; i++) {
 			num = lcm(num, i);
 		}
 		System.out.println(num);
