@@ -2,13 +2,13 @@ package main
 
 import "fmt"
 
-var (
-	ones  = []string{"", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"}
-	teens = []string{"ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"}
-	tens  = []string{"", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"}
-)
-
 func main() {
+	var (
+		ones  = []string{"", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"}
+		teens = []string{"ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"}
+		tens  = []string{"", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"}
+	)
+
 	// 1 - 9
 	to9 := 0
 	for i := 1; i < 10; i++ {
