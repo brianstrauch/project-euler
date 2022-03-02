@@ -1,5 +1,5 @@
 defmodule Problem002 do
-    def solve(a, _, sum) when a > 4000000 do
+    def solve(a, _, sum) when a > 4_000_000 do
         sum
     end
 

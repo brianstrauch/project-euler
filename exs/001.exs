@@ -1,15 +1,3 @@
-defmodule Problem001 do
-    def solve(0, sum) do
-        sum
-    end
-
-    def solve(n, sum) do
-        if rem(n, 3) == 0 or rem(n, 5) == 0 do
-            solve(n - 1, sum + n)
-        else
-            solve(n - 1, sum)
-        end
-    end
-end
-
-IO.puts(Problem001.solve(999, 0))
+f = fn n -> rem(n, 3) == 0 or rem(n, 5) == 0 end
+x = Enum.sum(Enum.filter(1..999, f))
+IO.puts(x)
