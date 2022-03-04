@@ -1,3 +1,3 @@
-f = fn n -> rem(n, 3) == 0 or rem(n, 5) == 0 end
-x = Enum.sum(Enum.filter(1..999, f))
-IO.puts(x)
+f = &(rem(&1, 3) == 0 or rem(&1, 5) == 0)
+x = Enum.sum Enum.filter(1..999, f)
+IO.puts x

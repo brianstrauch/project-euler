@@ -1,5 +1,5 @@
 defmodule Problem002 do
-    def solve(a, _, sum) when a > 4_000_000 do
+    def solve(a, _b, sum) when a > 4_000_000 do
         sum
     end
 
@@ -12,4 +12,4 @@ defmodule Problem002 do
     end
 end
 
-IO.puts(Problem002.solve(0, 1, 0))
+IO.puts Problem002.solve(0, 1, 0)

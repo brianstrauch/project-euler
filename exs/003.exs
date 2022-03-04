@@ -12,4 +12,4 @@ defmodule Problem003 do
     end
 end
 
-IO.puts(Problem003.solve(600_851_475_143, 2))
+IO.puts Problem003.solve(600_851_475_143, 2)
